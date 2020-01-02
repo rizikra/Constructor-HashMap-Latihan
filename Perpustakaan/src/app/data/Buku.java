@@ -6,14 +6,18 @@ public class Buku{
 	private String Penulis;
 	private String Penerbit;
 	private int JumlahHalaman;
+	private int TahunTerbit;
+	private int Stok;
 	
 	//Constrution Method
-	public Buku (String judul, String isbn, String penulis, String penerbit, int hal){
+	public Buku (String judul, String isbn, String penulis, String penerbit, int hal, int tahun, int stok){
 		this.JudulBuku = judul;
 		this.ISBN = isbn;
 		this.Penulis = penulis;
 		this.Penerbit = penerbit;
 		this.JumlahHalaman = hal;
+		this.TahunTerbit = tahun;
+		this.Stok = stok;
 	}
 	
 	public void setJudulBuku (String JudulBuku){
@@ -47,8 +51,26 @@ public class Buku{
 	public void setJumlahHalaman (int JumlahHalaman){
 		this.JumlahHalaman = JumlahHalaman;
 	}
-	public int JumlahHalaman(){
+	public int getJumlahHalaman(){
 		return JumlahHalaman;
 	}
+	
+	public void setTahunTerbit (int TahunTerbit){
+		this.TahunTerbit = TahunTerbit;
+	}
+	public int getTahunTerbit(){
+		return TahunTerbit;
+	}
+	
+	public void setStok (int Stok){
+		this.Stok = Stok;
+	}
+	public int getStok(){
+		return Stok;
+	}
+	
+	public void Dipinjam(){
+		this.Stok--;
+	}	
 }
 

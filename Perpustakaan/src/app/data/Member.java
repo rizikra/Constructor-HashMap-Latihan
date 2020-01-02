@@ -1,17 +1,16 @@
 package app.data;
 
-public class DataMember{
+public class Member{
 	private String ID;
 	private String Nama;
 	private String TglJoin;
-	private String Alamat;
 	
 	//Constrution Method
-	public DataMember (String id, String nama, String TglJoin, String alamat){
+	public Member (String id, String nama, String TglJoin){
 		this.ID = id;
 		this.Nama = nama;
 		this.TglJoin = TglJoin;
-		this.Alamat = alamat;
+
 	}
 
 	public void setID (String ID){
@@ -33,12 +32,5 @@ public class DataMember{
 	}
 	public String getTglJoin(){
 		return TglJoin;
-	}
-	
-	public void setAlamat (String Alamat){
-		this.Alamat = Alamat;
-	}
-	public String getAlamat(){
-		return Alamat;
 	}
 }
